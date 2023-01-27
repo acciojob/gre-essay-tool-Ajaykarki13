@@ -9,6 +9,9 @@ function countwords()
 
 	let words = input.value;
 	let arr = words.split(' ')
-	 counter.innerHTML=arr.length
-	
+	let count =0
+	for(let i=0;i<arr.length;i++){
+		if(i!=' ')
+		{count++;}
+	 counter.innerHTML=count;}
 }
