@@ -6,6 +6,6 @@ input.addEventListener("input",countwords)
 
 function countwords()
 {
-	let words = input.value;
-	 counter.innerHTML= words.split(' ').length
+	let words = input.value.trim().split(/\s+/);
+	 counter.innerHTML= words.length
 }
